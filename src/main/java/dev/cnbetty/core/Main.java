@@ -1,4 +1,4 @@
-package dev.cnbetty.template;
+package dev.cnbetty.core;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
