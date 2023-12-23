@@ -1,0 +1,7 @@
+name: Template
+version: 1.0.0
+main: dev.cnbetty.template.Main
+description: Template plugin for CNBetty
+author: Hinterhältiger
+website: cnbetty.dev
+api-version: '1.20'
