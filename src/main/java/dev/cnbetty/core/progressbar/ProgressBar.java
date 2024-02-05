@@ -7,7 +7,7 @@ public class ProgressBar {
         String bar = colorBase + begin;
         float xPer = max / length;
         for (int i = 1; i < length + 1; i++) {
-            if(x <= xPer * i) {
+            if (x <= xPer * i) {
                 bar = bar + color + "|";
             } else {
                 bar = bar + colorBase + "|";

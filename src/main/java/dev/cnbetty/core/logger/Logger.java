@@ -1,24 +1,16 @@
 package dev.cnbetty.core.logger;
 
 import dev.cnbetty.core.stringformatter.StringColor;
-import dev.cnbetty.core.stringformatter.StringFormatting;
+import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
-import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.*;
-
-import java.util.logging.Level;
 
 public final class Logger {
+    private static String plugin;
+    private static ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
     public Logger(String pluginname) {
         this.plugin = pluginname.toUpperCase();
     }
-    private static String plugin;
-    private static ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
-    public enum LogLevel {
-        INFO,
-        WARNING,
-        ERROR
-    }
+
     public static void log(LogLevel level, String message) {
         switch (level) {
             case INFO:
@@ -32,13 +24,22 @@ public final class Logger {
                 break;
         }
     }
+
     public void info(String message) {
         log(LogLevel.INFO, message);
     }
+
     public void warn(String message) {
         log(LogLevel.WARNING, message);
     }
+
     public void error(String message) {
         log(LogLevel.ERROR, message);
+    }
+
+    public enum LogLevel {
+        INFO,
+        WARNING,
+        ERROR
     }
 }
