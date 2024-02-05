@@ -1,0 +1,12 @@
+name: Core
+version: 0.0.1-DEV
+main: dev.cnbetty.core.Main
+description: Core plugin for CNBetty
+author: Hinterhältiger
+website: cnbetty.dev
+api-version: '1.20'
+commands:
+  coreidentify:
+    description: outputs the current core version installed.
+    usage: /coreidentify
+    permission: dev.cnbetty.core.identify

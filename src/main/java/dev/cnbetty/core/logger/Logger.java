@@ -10,7 +10,7 @@ import java.util.logging.Level;
 
 public final class Logger {
     public Logger(String pluginname) {
-        this.plugin = pluginname;
+        this.plugin = pluginname.toUpperCase();
     }
     private static String plugin;
     private static ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
