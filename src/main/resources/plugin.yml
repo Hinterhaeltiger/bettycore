@@ -10,3 +10,5 @@ commands:
     description: outputs the current core version installed.
     usage: /coreidentify
     permission: dev.cnbetty.core.identify
+  test:
+    description: tests
