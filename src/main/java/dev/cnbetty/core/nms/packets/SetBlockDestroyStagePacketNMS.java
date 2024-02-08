@@ -40,15 +40,15 @@ public class SetBlockDestroyStagePacketNMS implements PacketNMS{
 
     @Override
     public void send(Player player) {
-        PacketNMS.super.send(player);
+        send((CraftPlayer) player);
     }
     @Override
     public void send(CraftPlayer craftPlayer) {
-        PacketNMS.super.send(craftPlayer);
+        send(craftPlayer.getHandle());
     }
     @Override
     public void send(ServerPlayer serverPlayer) {
-        PacketNMS.super.send(serverPlayer);
+        send(serverPlayer.connection);
     }
     public int getEntityID() {
         return entityID;
