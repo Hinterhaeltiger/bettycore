@@ -2,8 +2,6 @@ package dev.cnbetty.core;
 
 import dev.cnbetty.core.commands.CommandRegistry;
 import dev.cnbetty.core.logger.Logger;
-import dev.cnbetty.core.nms.PacketEvent;
-import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -19,16 +17,13 @@ public class Main extends JavaPlugin {
     public void onEnable() {
         logger.info("plugin loaded.");
 
-        instance = this;
-
-        CommandRegistry.registerAll(instance);
+        CommandRegistry.registerAll(this);
         logger.info("commands loaded.");
 
         saveResource("config.yml", false);
         logger.info("config initialized");
 
-        Bukkit.getPluginManager().registerEvents(new PacketEvent(), instance);
-        logger.info("events loaded.");
+        instance = this;
     }
 
     @Override
