@@ -1,6 +1,6 @@
 package dev.cnbetty.core.nms;
 
-import net.minecraft.network.protocol.Packet;
+import dev.cnbetty.core.nms.packets.PacketNMS;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Cancellable;
 import org.bukkit.event.Event;
@@ -11,25 +11,21 @@ public class ClientboundPacketEvent extends Event implements Cancellable {
 
     public static HandlerList handlerList = new HandlerList();
 
-    public Packet packet;
+    public PacketNMS packet;
     public Player player;
     public boolean cancelled;
 
-    public ClientboundPacketEvent(Packet packet, Player player) {
+    public ClientboundPacketEvent(PacketNMS packet, Player player) {
         this.packet = packet;
         this.player = player;
         this.cancelled = false;
     }
 
-    public static @NotNull HandlerList getHandlerList() {
-        return ClientboundPacketEvent.handlerList;
-    }
-
-    public Packet getPacket() {
+    public PacketNMS getPacket() {
         return this.packet;
     }
 
-    public void setPacket(Packet packet) {
+    public void setPacket(PacketNMS packet) {
         this.packet = packet;
     }
 
@@ -39,6 +35,10 @@ public class ClientboundPacketEvent extends Event implements Cancellable {
 
     @Override
     public @NotNull HandlerList getHandlers() {
+        return ClientboundPacketEvent.handlerList;
+    }
+
+    public static @NotNull HandlerList getHandlerList() {
         return ClientboundPacketEvent.handlerList;
     }
 
