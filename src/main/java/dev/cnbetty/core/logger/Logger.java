@@ -7,6 +7,7 @@ import org.bukkit.command.ConsoleCommandSender;
 public final class Logger {
     private static String plugin;
     private static ConsoleCommandSender console = Bukkit.getServer().getConsoleSender();
+
     public Logger(String pluginname) {
         this.plugin = pluginname.toUpperCase();
     }

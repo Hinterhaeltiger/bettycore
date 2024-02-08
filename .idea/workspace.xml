@@ -4,24 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a44968d-f162-4396-9d39-87510a507868" name="Changes" comment="Added IDE config for easier development">
-      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/GUICommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/gui/ExampleGUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/gui/GUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/gui/GUIHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/gui/GUIItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/gui/GUIItemClickEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/gui/GUIItemLocation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/gui/InventoryGUIHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9a44968d-f162-4396-9d39-87510a507868" name="Changes" comment="fixed code issues">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/chat/MessageSentListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/WhisperCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/events/EventRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CommandRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CommandRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/GUICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/GUICommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/logger/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/logger/Logger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/ClientboundPacketEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/ClientboundPacketEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/PacketEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/PacketEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/ServerboundPacketEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/ServerboundPacketEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/SetBlockDestroyStageNMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/SetBlockDestroyStageNMS.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +47,18 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Core" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Core" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="paperweight" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Core" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="run paper" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -199,21 +207,30 @@
       <option name="project" value="LOCAL" />
       <updated>1707150595748</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed code issues">
+      <option name="closed" value="true" />
+      <created>1707416239744</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1707416239744</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Moved plugin registering to another class" />
     <MESSAGE value="Added basic configuriation support via the paper YAML API" />
     <MESSAGE value="Added IDE config for easier development" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added IDE config for easier development" />
+    <MESSAGE value="fixed code issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed code issues" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Main.java</url>
-          <line>22</line>
+          <line>23</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

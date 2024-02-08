@@ -1,4 +1,4 @@
-package dev.cnbetty.core.commands;
+/*package dev.cnbetty.core.commands;
 
 import dev.cnbetty.core.gui.InventoryGUIHolder;
 import org.bukkit.Bukkit;
@@ -31,3 +31,4 @@ public class GUICommand implements CommandExecutor {
         }
     }
 }
+*/

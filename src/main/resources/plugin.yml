@@ -16,3 +16,10 @@ commands:
     permission: dev.cnbetty.core.exampleguicommand
   test:
     description: tests
+  msg:
+    description: privately message a player
+    usage: /msg <recipient> <message>
+    permission: dev.cnbetty.whisper
+    aliases:
+      - w
+      - tell

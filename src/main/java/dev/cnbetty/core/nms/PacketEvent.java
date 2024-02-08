@@ -3,7 +3,6 @@ package dev.cnbetty.core.nms;
 import dev.cnbetty.core.Main;
 import io.netty.channel.*;
 import net.minecraft.network.protocol.Packet;
-import org.bukkit.Bukkit;
 import org.bukkit.craftbukkit.v1_20_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
@@ -24,13 +23,13 @@ public class PacketEvent implements Listener {
     }
 
     private void injectPlayer(Player player) {
-        ChannelDuplexHandler channelDuplexHandler = new ChannelDuplexHandler(){
+        ChannelDuplexHandler channelDuplexHandler = new ChannelDuplexHandler() {
             @Override
             public void channelRead(ChannelHandlerContext channelHandlerContext, Object packet) {
                 try {
                     ServerboundPacketEvent serverboundPacketEvent = new ServerboundPacketEvent((Packet) packet, player);
                     //Bukkit.getPluginManager().callEvent(serverboundPacketEvent);
-                    if(serverboundPacketEvent.isCancelled()) {
+                    if (serverboundPacketEvent.isCancelled()) {
                         return;
                     }
                     packet = serverboundPacketEvent.getPacket();
@@ -45,7 +44,7 @@ public class PacketEvent implements Listener {
                 try {
                     ClientboundPacketEvent clientboundPacketEvent = new ClientboundPacketEvent((Packet) packet, player);
                     //Bukkit.getPluginManager().callEvent(clientboundPacketEvent);
-                    if(clientboundPacketEvent.isCancelled()) {
+                    if (clientboundPacketEvent.isCancelled()) {
                         return;
                     }
                     packet = clientboundPacketEvent.getPacket();

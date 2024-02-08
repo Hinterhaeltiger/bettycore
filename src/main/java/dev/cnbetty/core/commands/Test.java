@@ -12,7 +12,7 @@ public class Test implements CommandExecutor {
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
         Player player = (Player) commandSender;
         Byte i = Byte.valueOf(strings[0]);
-        SetBlockDestroyStageNMS.send(player, player.getEntityId(),player.getLocation(), i);
+        SetBlockDestroyStageNMS.send(player, player.getEntityId(), player.getLocation(), i);
         return true;
     }
 }

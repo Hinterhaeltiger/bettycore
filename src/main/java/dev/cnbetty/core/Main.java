@@ -1,6 +1,7 @@
 package dev.cnbetty.core;
 
 import dev.cnbetty.core.commands.CommandRegistry;
+import dev.cnbetty.core.events.EventRegistry;
 import dev.cnbetty.core.logger.Logger;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -22,6 +23,9 @@ public class Main extends JavaPlugin {
 
         saveResource("config.yml", false);
         logger.info("config initialized");
+
+        EventRegistry.registerAll(this);
+        logger.info("events registered.");
 
         instance = this;
     }
