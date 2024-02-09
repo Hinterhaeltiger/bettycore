@@ -9,14 +9,15 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
-    public static final String version = "0.0.1-DEV";
     public static final Logger logger = new Logger("core");
+    public static String version;
     private static Main instance;
     public static PluginDescriptionFile pluginDescriptionFile;
 
     public static Main getPlugin() {
         return instance;
     }
+
 
     @Override
     public void onEnable() {

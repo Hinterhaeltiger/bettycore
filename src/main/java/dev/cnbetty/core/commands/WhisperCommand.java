@@ -42,8 +42,6 @@ public class WhisperCommand implements CommandExecutor, TabExecutor {
             return playerlist;
         } else if (strings.length > 1) {
             List<String> emptylist = new ArrayList<>();
-            //emptylist.add("V Your message here V");
-
             return emptylist;
         }
         return null;
