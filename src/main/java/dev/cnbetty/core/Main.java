@@ -1,6 +1,7 @@
 package dev.cnbetty.core;
 
 import dev.cnbetty.core.commands.CommandRegistry;
+import dev.cnbetty.core.custom.enchantments.CustomEnchantment;
 import dev.cnbetty.core.logger.Logger;
 import dev.cnbetty.core.nms.PacketEvent;
 import org.bukkit.Bukkit;
@@ -37,7 +38,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        CustomEnchantment.unregister();
     }
 
     public static Main getPlugin() {
