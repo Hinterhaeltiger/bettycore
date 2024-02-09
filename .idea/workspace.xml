@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a44968d-f162-4396-9d39-87510a507868" name="Changes" comment="fixed code issues">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/chat/MessageSentListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/WhisperCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/events/EventRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CommandRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CommandRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/GUICommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/GUICommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/logger/Logger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/logger/Logger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/ClientboundPacketEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/ClientboundPacketEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/PacketEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/PacketEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/ServerboundPacketEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/ServerboundPacketEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/SetBlockDestroyStageNMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/SetBlockDestroyStageNMS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
-    </list>
+    <list default="true" id="9a44968d-f162-4396-9d39-87510a507868" name="Changes" comment="Added basic configuriation support via the paper YAML API" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,12 +37,6 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Core" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="paperweight" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Core" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="run paper" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -70,7 +49,6 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -79,28 +57,10 @@
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;Hinterhaeltiger&quot;
-  }
-}</component>
-  <component name="GithubPullRequestsUISettings">
-    <option name="selectedUrlAndAccountId">
-      <UrlAndAccount>
-        <option name="accountId" value="865735ab-38e2-4b21-8cbf-64df0a545edb" />
-        <option name="url" value="https://github.com/Codename-Betty/bettycore" />
-      </UrlAndAccount>
-    </option>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.papermc.paper/paper-api/1.20.4-R0.1-SNAPSHOT/cfba7e9c97a1efd304fad5801d84c6e9bd356481/paper-api-1.20.4-R0.1-SNAPSHOT.jar!/org/bukkit/Material.class" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.papermc.paper/paper-api/1.20.4-R0.1-SNAPSHOT/cfba7e9c97a1efd304fad5801d84c6e9bd356481/paper-api-1.20.4-R0.1-SNAPSHOT.jar!/org/bukkit/inventory/ItemStack.class" root0="SKIP_INSPECTION" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 4
-}</component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2bx9s7v1R1GsM1tTyXkWxvCdPF0" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -109,24 +69,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.Build + Server.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.Build Core.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin script (Beta).build.gradle.kts.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/IdeaProjects/Core/settings.gradle.kts&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build + Server.executor": "Run",
+    "Gradle.Build Core.executor": "Run",
+    "Kotlin script (Beta).build.gradle.kts.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Administrator/IdeaProjects/Core",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Build + Server" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
@@ -191,46 +148,20 @@
       <option name="project" value="LOCAL" />
       <updated>1707148772943</updated>
     </task>
-    <task id="LOCAL-00004" summary="Added IDE config for easier development">
-      <option name="closed" value="true" />
-      <created>1707148884104</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1707148884104</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Added IDE config for easier development">
-      <option name="closed" value="true" />
-      <created>1707150595748</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1707150595748</updated>
-    </task>
-    <task id="LOCAL-00006" summary="fixed code issues">
-      <option name="closed" value="true" />
-      <created>1707416239744</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1707416239744</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Moved plugin registering to another class" />
     <MESSAGE value="Added basic configuriation support via the paper YAML API" />
-    <MESSAGE value="Added IDE config for easier development" />
-    <MESSAGE value="fixed code issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed code issues" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added basic configuriation support via the paper YAML API" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Main.java</url>
-          <line>23</line>
+          <line>22</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

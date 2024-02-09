@@ -18,19 +18,17 @@ public class Main extends JavaPlugin {
         return instance;
     }
 
-
     @Override
     public void onEnable() {
         logger.info("plugin loaded.");
 
-        CommandRegistry.registerAll(this);
         instance = this;
 
         pluginDescriptionFile = instance.getDescription();
         version = pluginDescriptionFile.getVersion();
         logger.info("PDF loaded.");
 
-        CommandRegistry.registerAll(instance);
+        CommandRegistry.registerAll(this);
         logger.info("commands loaded.");
 
         saveResource("config.yml", false);
@@ -44,7 +42,7 @@ public class Main extends JavaPlugin {
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        CustomEnchantment.unregister();
     }
 }
 
