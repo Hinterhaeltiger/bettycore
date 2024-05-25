@@ -1,7 +1,5 @@
 package dev.cnbetty.core.commands;
 
-import com.google.common.base.Functions;
-import com.google.common.collect.Lists;
 import dev.cnbetty.core.nms.packets.SetBlockDestroyStagePacketNMS;
 import net.minecraft.core.BlockPos;
 import org.bukkit.command.Command;
@@ -21,13 +19,13 @@ public class SetBlockDestroyStageCommand implements CommandExecutor, TabExecutor
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
         Player player = (Player) commandSender;
-        Byte i;
+        byte i;
 
         if(strings.length == 1 && Integer.parseInt(strings[0]) < 11) {
-            if (strings[0] == "0") {
+            if (strings[0].equals("0")) {
                 i = Byte.parseByte("10");
             } else {
-                i = Byte.valueOf("" + (Integer.parseInt(strings[0]) - 1));
+                i = Byte.parseByte("" + (Integer.parseInt(strings[0]) - 1));
             }
             new SetBlockDestroyStagePacketNMS(player.getEntityId(), new BlockPos(player.getLocation().getBlockX(), player.getLocation().getBlockY() - 1, player.getLocation().getBlockZ()), i).send((CraftPlayer) player);
             return true;
@@ -35,8 +33,6 @@ public class SetBlockDestroyStageCommand implements CommandExecutor, TabExecutor
     }
     @Override
     public @Nullable List<String> onTabComplete(@NotNull CommandSender commandSender, @NotNull Command command, @NotNull String s, @NotNull String[] strings) {
-        List<Integer> completorlist = new ArrayList<>();
-
         if (strings.length > 1) {
             return Collections.emptyList();
         } else {
