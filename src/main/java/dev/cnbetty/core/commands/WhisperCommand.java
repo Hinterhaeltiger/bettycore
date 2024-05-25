@@ -26,8 +26,7 @@ public class WhisperCommand implements CommandExecutor, TabExecutor {
 
             recipient.sendMessage(Component.text(commandSender.getName() + " whispers to you: " + message));
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }

@@ -46,3 +46,16 @@ bin/
 
 ### CUSTOM ###
 !/src/main/java/dev/cnbetty/core/gui/
+!/.idea/shelf/
+
+!/.idea/compiler.xml
+
+!/.idea/jarRepositories.xml
+
+!/.idea/misc.xml
+
+!/.idea/modules.xml
+
+!/.idea/vcs.xml
+
+!/.idea/workspace.xml

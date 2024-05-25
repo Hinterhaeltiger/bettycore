@@ -21,6 +21,10 @@ public class ServerboundPacketEvent extends Event implements Cancellable {
         this.cancelled = false;
     }
 
+    public static @NotNull HandlerList getHandlerList() {
+        return ServerboundPacketEvent.handlerList;
+    }
+
     public PacketNMS getPacket() {
         return this.packet;
     }
@@ -31,10 +35,6 @@ public class ServerboundPacketEvent extends Event implements Cancellable {
 
     @Override
     public @NotNull HandlerList getHandlers() {
-        return ServerboundPacketEvent.handlerList;
-    }
-
-    public static @NotNull HandlerList getHandlerList() {
         return ServerboundPacketEvent.handlerList;
     }
 

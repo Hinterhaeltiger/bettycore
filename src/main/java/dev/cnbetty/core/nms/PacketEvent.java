@@ -32,7 +32,7 @@ public class PacketEvent implements Listener {
         if (playerHandlers.containsKey(player)) {
             return;
         }
-        ChannelDuplexHandler channelDuplexHandler = new ChannelDuplexHandler(){
+        ChannelDuplexHandler channelDuplexHandler = new ChannelDuplexHandler() {
             @Override
             public void channelRead(ChannelHandlerContext channelHandlerContext, Object packet) {
                 final Object finalPacket = packet;
@@ -40,7 +40,7 @@ public class PacketEvent implements Listener {
                     try {
                         Object p = finalPacket;
                         PacketNMS packetNMS = PacketNMS.getPacket(p);
-                        if(packetNMS != null) {
+                        if (packetNMS != null) {
                             ServerboundPacketEvent serverboundPacketEvent = new ServerboundPacketEvent(packetNMS, player);
                             Bukkit.getPluginManager().callEvent(serverboundPacketEvent);
                             if (serverboundPacketEvent.isCancelled()) {
@@ -62,7 +62,7 @@ public class PacketEvent implements Listener {
                     try {
                         Object p = finalPacket;
                         PacketNMS packetNMS = PacketNMS.getPacket(p);
-                        if(packetNMS != null) {
+                        if (packetNMS != null) {
                             ClientboundPacketEvent clientboundPacketEvent = new ClientboundPacketEvent(packetNMS, player);
                             Bukkit.getPluginManager().callEvent(clientboundPacketEvent);
                             if (clientboundPacketEvent.isCancelled()) {

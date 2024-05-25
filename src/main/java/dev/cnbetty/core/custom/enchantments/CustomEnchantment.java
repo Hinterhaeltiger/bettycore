@@ -3,7 +3,6 @@ package dev.cnbetty.core.custom.enchantments;
 import io.papermc.paper.enchantments.EnchantmentRarity;
 import net.kyori.adventure.text.Component;
 import org.bukkit.NamespacedKey;
-import org.bukkit.Registry;
 import org.bukkit.enchantments.Enchantment;
 import org.bukkit.enchantments.EnchantmentTarget;
 import org.bukkit.entity.EntityCategory;
@@ -15,7 +14,7 @@ import javax.annotation.Nullable;
 import java.lang.reflect.Field;
 import java.util.*;
 
-public class CustomEnchantment extends Enchantment {
+public abstract class CustomEnchantment extends Enchantment {
 
     public static List<Enchantment> enchantments = new ArrayList<>();
 
@@ -35,7 +34,7 @@ public class CustomEnchantment extends Enchantment {
         this.translationKey = translationKey;
         this.namespacedKey = namespacedKey;
     }
-
+/*
     public static CustomEnchantment register(CustomEnchantment enchantment) {
         try {
             Field f = Enchantment.class.getDeclaredField("acceptingNew");
@@ -48,7 +47,7 @@ public class CustomEnchantment extends Enchantment {
         enchantments.add(enchantment);
         return enchantment;
     }
-
+*/
     public static void unregister(Enchantment enchantment) {
         try {
             Field keyField = Enchantment.class.getDeclaredField("byKey");
@@ -65,11 +64,12 @@ public class CustomEnchantment extends Enchantment {
             HashMap<String, Enchantment> byName = (HashMap<String, Enchantment>) nameField.get(null);
 
             byName.remove(enchantment.getName());
-        } catch (Exception ignored) { }
+        } catch (Exception ignored) {
+        }
     }
 
     public static void unregister() {
-        for(Enchantment enchantment : enchantments) {
+        for (Enchantment enchantment : enchantments) {
             unregister(enchantment);
         }
     }
@@ -82,40 +82,48 @@ public class CustomEnchantment extends Enchantment {
     public @NotNull String getName() {
         return name;
     }
+
     @Override
     public int getMaxLevel() {
         return maxLevel;
     }
+
     @Override
     public int getStartLevel() {
         return minLevel;
     }
+
     @Override
     public @NotNull EnchantmentTarget getItemTarget() {
         return enchantmentTarget;
     }
+
     @Override
     public boolean isTreasure() {
         return false;
     } //Not used
+
     @Override
     public boolean isCursed() {
         return false;
     } //Not used
+
     @Override
     public boolean conflictsWith(@NotNull Enchantment other) {
-        if(conflicts == null) {
+        if (conflicts == null) {
             return false;
         }
         return conflicts.contains(other);
     }
+
     @Override
     public boolean canEnchantItem(@NotNull ItemStack item) {
         return false;
     } //Not used
+
     @Override
     public @NotNull Component displayName(int level) {
-        return Component.text(name + " " + switch(level) {
+        return Component.text(name + " " + switch (level) {
             case 0 -> "";
             case 1 -> "I";
             case 2 -> "II";
@@ -130,38 +138,47 @@ public class CustomEnchantment extends Enchantment {
             default -> level;
         });
     }
+
     @Override
     public boolean isTradeable() {
         return false;
     } //Not used
+
     @Override
     public boolean isDiscoverable() {
         return false;
     } //Not used
+
     @Override
     public int getMinModifiedCost(int level) {
         return 0;
     } //Not used
+
     @Override
     public int getMaxModifiedCost(int level) {
         return 0;
     } //Not used
+
     @Override
     public @NotNull EnchantmentRarity getRarity() {
         return EnchantmentRarity.COMMON;
     } //Not used
+
     @Override
     public float getDamageIncrease(int level, @NotNull EntityCategory entityCategory) {
         return 0;
     } //Not used
+
     @Override
     public @NotNull Set<EquipmentSlot> getActiveSlots() {
         return new HashSet<>();
     } //Not used
+
     @Override
     public @NotNull String translationKey() {
         return translationKey;
     }
+
     @Override
     public @NotNull NamespacedKey getKey() {
         return namespacedKey;

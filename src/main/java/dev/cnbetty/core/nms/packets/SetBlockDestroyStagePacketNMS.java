@@ -5,10 +5,11 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientboundBlockDestructionPacket;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.network.ServerGamePacketListenerImpl;
+import net.minecraft.world.entity.player.Player;
 import org.bukkit.craftbukkit.v1_20_R3.entity.CraftPlayer;
 import org.bukkit.entity.Player;
 
-public class SetBlockDestroyStagePacketNMS implements PacketNMS{
+public class SetBlockDestroyStagePacketNMS implements PacketNMS {
 
     int entityID;
     BlockPos blockPos;
@@ -21,7 +22,7 @@ public class SetBlockDestroyStagePacketNMS implements PacketNMS{
     }
 
     public SetBlockDestroyStagePacketNMS(Object packet) {
-        if(packet instanceof ClientboundBlockDestructionPacket clientboundBlockDestructionPacket) {
+        if (packet instanceof ClientboundBlockDestructionPacket clientboundBlockDestructionPacket) {
             this.entityID = clientboundBlockDestructionPacket.getId();
             this.blockPos = clientboundBlockDestructionPacket.getPos();
             this.destroyStage = (byte) clientboundBlockDestructionPacket.getProgress();
@@ -40,31 +41,39 @@ public class SetBlockDestroyStagePacketNMS implements PacketNMS{
 
     @Override
     public void send(Player player) {
-        send((CraftPlayer) player);
+        send(player);
     }
+
     @Override
     public void send(CraftPlayer craftPlayer) {
         send(craftPlayer.getHandle());
     }
+
     @Override
     public void send(ServerPlayer serverPlayer) {
         send(serverPlayer.connection);
     }
+
     public int getEntityID() {
         return entityID;
     }
+
     public void setEntityID(int entityID) {
         this.entityID = entityID;
     }
+
     public BlockPos getBlockPos() {
         return blockPos;
     }
+
     public void setBlockPos(BlockPos blockPos) {
         this.blockPos = blockPos;
     }
+
     public Byte getDestroyStage() {
         return destroyStage;
     }
+
     public void setDestroyStage(Byte destroyStage) {
         this.destroyStage = destroyStage;
     }
