@@ -5,7 +5,7 @@ import net.minecraft.network.protocol.Packet;
 import net.minecraft.network.protocol.game.ClientboundBlockDestructionPacket;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.network.ServerGamePacketListenerImpl;
-import net.minecraft.world.entity.player.Player;
+import org.bukkit.entity.Player;
 import org.bukkit.craftbukkit.entity.CraftPlayer;
 
 
@@ -41,7 +41,7 @@ public class SetBlockDestroyStagePacketNMS implements PacketNMS {
 
     @Override
     public void send(Player player) {
-        send(player);
+        send((CraftPlayer) player);
     }
 
     @Override
