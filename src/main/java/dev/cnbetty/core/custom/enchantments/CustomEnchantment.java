@@ -1,9 +1,8 @@
 package dev.cnbetty.core.custom.enchantments;
-
-import io.papermc.paper.enchantments.EnchantmentRarity;
+/*
 import net.kyori.adventure.text.Component;
+import net.minecraft.world.item.enchantment.Enchantment;
 import org.bukkit.NamespacedKey;
-import org.bukkit.enchantments.Enchantment;
 import org.bukkit.enchantments.EnchantmentTarget;
 import org.bukkit.entity.EntityCategory;
 import org.bukkit.inventory.EquipmentSlot;
@@ -26,6 +25,8 @@ public abstract class CustomEnchantment extends Enchantment {
     String translationKey;
     NamespacedKey namespacedKey;
 
+
+
     public CustomEnchantment(String name, int maxLevel, int minLevel, EnchantmentTarget enchantmentTarget, @Nullable List<Enchantment> conflicts, String translationKey, NamespacedKey namespacedKey) {
         this.name = name;
         this.maxLevel = maxLevel;
@@ -34,7 +35,7 @@ public abstract class CustomEnchantment extends Enchantment {
         this.translationKey = translationKey;
         this.namespacedKey = namespacedKey;
     }
-/*
+
     public static CustomEnchantment register(CustomEnchantment enchantment) {
         try {
             Field f = Enchantment.class.getDeclaredField("acceptingNew");
@@ -47,7 +48,7 @@ public abstract class CustomEnchantment extends Enchantment {
         enchantments.add(enchantment);
         return enchantment;
     }
-*/
+
     public static void unregister(Enchantment enchantment) {
         try {
             Field keyField = Enchantment.class.getDeclaredField("byKey");
@@ -183,4 +184,8 @@ public abstract class CustomEnchantment extends Enchantment {
     public @NotNull NamespacedKey getKey() {
         return namespacedKey;
     }
+
+
 }
+*/
+//TODO: decide whether to remove the CustomEnchantment API and implement it differently or update it - URGENT!
