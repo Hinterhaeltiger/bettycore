@@ -40,21 +40,12 @@ public class SetBlockDestroyStageCommand implements CommandExecutor, TabExecutor
         if (strings.length > 1) {
             return Collections.emptyList();
         } else {
-            List<Integer> numbers = new ArrayList<>();
+            List<String> returnlist = new ArrayList<>();
             for (int i = 0; i <= 10; i++) {
-                numbers.add(i);
+                returnlist.add(""+i);
             }
 
-            // Convert the list of numbers to a list of strings
-            List<String> stringNumbers = new ArrayList<>();
-            for (Integer number : numbers) {
-                stringNumbers.add(number.toString());
-            }
-
-            // Sort the list of strings numerically
-            Collections.sort(stringNumbers, (a, b) -> Integer.compare(Integer.parseInt(a), Integer.parseInt(b)));
-
-            return stringNumbers;
+            return returnlist;
         }
     }
 }
