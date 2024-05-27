@@ -34,8 +34,8 @@ public class Core extends JavaPlugin {
 
         instance = this;
     }
-    public Core getInstance() {
-        return this;
+    public static Core getInstance() {
+        return instance;
     }
     @Override
     public void onDisable() {
