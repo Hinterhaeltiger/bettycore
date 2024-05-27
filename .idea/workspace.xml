@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a44968d-f162-4396-9d39-87510a507868" name="Changes" comment="Whisper Command Fixes">
+    <list default="true" id="9a44968d-f162-4396-9d39-87510a507868" name="Changes" comment="fixed imports">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/chat/MessageSentListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/chat/MessageSentListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/WhisperCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/WhisperCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/custom/enchantments/CustomEnchantment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/custom/enchantments/CustomEnchantment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/events/EventRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/events/EventRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/ClientboundPacketEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/ClientboundPacketEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/PacketEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/PacketEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/ServerboundPacketEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/ServerboundPacketEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/packets/PacketNMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/packets/PacketNMS.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/packets/SetBlockDestroyStagePacketNMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/packets/SetBlockDestroyStagePacketNMS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CommandRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CommandRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,19 +40,7 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Core" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Core" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="paperweight" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Core" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="run paper" type="c8890929:TasksNode$1" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -75,7 +58,26 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Hinterhaeltiger&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="865735ab-38e2-4b21-8cbf-64df0a545edb" />
+        <option name="url" value="https://github.com/Codename-Betty/bettycore" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -97,15 +99,21 @@
     &quot;Kotlin script (Beta).build.gradle.kts.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Administrator/IdeaProjects/Core&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Administrator\IdeaProjects\Core\src\main\java\dev\cnbetty\core\textutility" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Build + Server" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
@@ -129,11 +137,25 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Core.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Core.main" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
         <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+        <option value="jdk-21.0.2-openjdk-21.0.2-4caba194b151-4f524021" />
       </set>
     </attachedChunks>
   </component>
@@ -170,12 +192,75 @@
       <option name="project" value="LOCAL" />
       <updated>1707148772943</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Updated Minecraft Server version and fixed an issue in the NMS handler where type type Craftplayer was cast to Player, even though that was unnessesary and didn't work">
+      <option name="closed" value="true" />
+      <created>1716646905188</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716646905188</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated Minecraft Server version and fixed an issue in the NMS handler where type type Craftplayer was cast to Player, even though that was unnessesary and didn't work">
+      <option name="closed" value="true" />
+      <created>1716646998481</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716646998481</updated>
+    </task>
+    <task id="LOCAL-00006" summary="fixed imports broken by previous commit">
+      <option name="closed" value="true" />
+      <created>1716651255956</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716651255956</updated>
+    </task>
+    <task id="LOCAL-00007" summary="fixed SetBlockDestroyStageCommand and added a tab executor">
+      <option name="closed" value="true" />
+      <created>1716655311938</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716655311938</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fixed imports">
+      <option name="closed" value="true" />
+      <created>1716658558278</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716658558278</updated>
+    </task>
+    <task id="LOCAL-00009" summary="fixed imports">
+      <option name="closed" value="true" />
+      <created>1716660942475</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716660942475</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Moved plugin registering to another class" />
     <MESSAGE value="Added basic configuriation support via the paper YAML API" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added basic configuriation support via the paper YAML API" />
+    <MESSAGE value="Updated Minecraft Server version and fixed an issue in the NMS handler where type type Craftplayer was cast to Player, even though that was unnessesary and didn't work" />
+    <MESSAGE value="fixed imports broken by previous commit" />
+    <MESSAGE value="fixed SetBlockDestroyStageCommand and added a tab executor" />
+    <MESSAGE value="fixed imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed imports" />
   </component>
 </project>

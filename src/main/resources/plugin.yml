@@ -17,8 +17,12 @@ commands:
     description: opens a basic gui for development purposes
     usage: /opengui
     permission: dev.cnbetty.core.exampleguicommand
-  test:
-    description: tests
+  setblockdestroystage:
+    description: test command for setting the destroy stage of the block which the player currently stands on
+    usage: /setblockdestroystage <stage 0-10 >
+    permission: dev.cnbetty.blockdestroystage
+    aliases:
+      - sbds
   msg:
     description: privately message a player
     usage: /msg <recipient> <message>

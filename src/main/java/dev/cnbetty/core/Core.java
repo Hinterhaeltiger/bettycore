@@ -7,16 +7,11 @@ import dev.cnbetty.core.logger.Logger;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public class Main extends JavaPlugin {
+public class Core extends JavaPlugin {
     public static final Logger logger = new Logger("core");
     public static String version;
     public static PluginDescriptionFile pluginDescriptionFile;
-    private static Main instance;
-
-    public static Main getPlugin() {
-        return instance;
-    }
-
+    private static Core instance;
     @Override
     public void onEnable() {
         logger.info("plugin loaded.");
@@ -26,6 +21,7 @@ public class Main extends JavaPlugin {
         pluginDescriptionFile = this.getDescription();
         version = pluginDescriptionFile.getVersion();
         logger.info("PDF loaded.");
+        logger.info(version);
 
         CommandRegistry.registerAll(this);
         logger.info("commands loaded.");
@@ -38,7 +34,9 @@ public class Main extends JavaPlugin {
 
         instance = this;
     }
-
+    public Core getInstance() {
+        return this;
+    }
     @Override
     public void onDisable() {
 
