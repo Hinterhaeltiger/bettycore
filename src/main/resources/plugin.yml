@@ -7,8 +7,6 @@ website: cnbetty.dev
 api-version: '1.20'
 load: STARTUP
 commands:
-  setblockdestroystage:
-    description: Test für nms
   coreidentify:
     description: outputs the current core version installed.
     usage: /coreidentify
