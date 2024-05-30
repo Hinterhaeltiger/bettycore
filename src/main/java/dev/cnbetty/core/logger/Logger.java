@@ -1,6 +1,6 @@
 package dev.cnbetty.core.logger;
 
-import dev.cnbetty.core.stringformatter.StringColor;
+import dev.cnbetty.core.textutility.stringformatter.StringColor;
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
 
