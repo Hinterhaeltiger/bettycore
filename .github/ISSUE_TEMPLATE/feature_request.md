@@ -1,13 +1,13 @@
 ---
 name: Feature request
-about: Suggest an idea for this project
+about: Suggest an idea for this project - DO NOT request support for older versions
+  of Minecraft - The project's whole purpose is implementing APIs for the newest versions
+  of Minecraft.
 title: ''
 labels: ''
 assignees: ''
 
 ---
-
-__DO NOT request support for older versions of Minecraft - The project's whole purpose is implementing APIs for the newest versions of Minecraft.__
 
 **Is your feature request related to a problem? Please describe.**
 A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
