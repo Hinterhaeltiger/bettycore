@@ -1,5 +1,6 @@
-package dev.cnbetty.core.stringformatter;
+package dev.cnbetty.core.textutility.stringformatter;
 
+@Deprecated()
 public class StringColor {
     public static final String DARK_RED = "§4";
     public static final String RED = "§c";

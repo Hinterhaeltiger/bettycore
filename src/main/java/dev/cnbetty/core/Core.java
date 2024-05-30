@@ -23,7 +23,6 @@ public class Core extends JavaPlugin {
         logger.info("PDF loaded.");
         logger.info(version);
 
-        CommandRegistry.registerAll(this);
         logger.info("commands loaded.");
 
         saveResource("config.yml", false);
@@ -34,12 +33,13 @@ public class Core extends JavaPlugin {
 
         instance = this;
     }
+    @Override
+    public void onDisable() {
+        logger.info("plugin unloaded");
+    }
     public static Core getInstance() {
         return instance;
     }
-    @Override
-    public void onDisable() {
-
-    }
+    public static String getVersion() { return version; }
 }
 

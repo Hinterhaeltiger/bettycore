@@ -1,5 +1,6 @@
 package dev.cnbetty.core.stringformatter;
 
+@Deprecated()
 public class StringFormatting {
     public static final String OBFUSCATED = "§k";
     public static final String BOLD = "§l";
