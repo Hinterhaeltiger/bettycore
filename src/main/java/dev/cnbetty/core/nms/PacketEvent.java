@@ -1,7 +1,6 @@
 package dev.cnbetty.core.nms;
 
-
-import dev.cnbetty.core.Core;
+import dev.cnbetty.core.Main;
 import dev.cnbetty.core.nms.packets.PacketNMS;
 import io.netty.channel.*;
 import org.bukkit.Bukkit;
@@ -37,7 +36,7 @@ public class PacketEvent implements Listener {
             @Override
             public void channelRead(ChannelHandlerContext channelHandlerContext, Object packet) {
                 final Object finalPacket = packet;
-                Bukkit.getScheduler().runTask(Core.getInstance(), () -> {
+                Bukkit.getScheduler().runTask(Main.getPlugin(), () -> {
                     try {
                         Object p = finalPacket;
                         PacketNMS packetNMS = PacketNMS.getPacket(p);
@@ -59,7 +58,7 @@ public class PacketEvent implements Listener {
             @Override
             public void write(ChannelHandlerContext channelHandlerContext, Object packet, ChannelPromise channelPromise) {
                 final Object finalPacket = packet;
-                Bukkit.getScheduler().runTask(Core.getInstance(), () -> {
+                Bukkit.getScheduler().runTask(Main.getPlugin(), () -> {
                     try {
                         Object p = finalPacket;
                         PacketNMS packetNMS = PacketNMS.getPacket(p);
