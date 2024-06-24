@@ -30,6 +30,9 @@ tasks {
         useJUnitPlatform()
     }
     runServer {
+        downloadPlugins {
+            url("https://ci.lucko.me/job/spark/418/artifact/spark-bukkit/build/libs/spark-1.10.73-bukkit.jar")
+        }
         minecraftVersion("1.20.6")
     }
     assemble {
