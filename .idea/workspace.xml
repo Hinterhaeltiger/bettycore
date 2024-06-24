@@ -4,22 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a44968d-f162-4396-9d39-87510a507868" name="Changes" comment="fixed issue with getInstance() command">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/CoreBootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CoreIdentifyCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/config/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/paper-plugin.yml" afterDir="false" />
+    <list default="true" id="9a44968d-f162-4396-9d39-87510a507868" name="Changes" comment="Revert &quot;Added glitchy files to git because I'm retarded&quot;&#10;&#10;This reverts commit ecc6b235">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Core.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CommandRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CommandRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CoreIdentify.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/SetBlockDestroyStageCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/SetBlockDestroyStageCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/events/EventRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/events/EventRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/textutility/progressbar/ProgressBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/textutility/progressbar/ProgressBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/textutility/stringformatter/StringColor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/textutility/stringformatter/StringColor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/textutility/stringformatter/StringFormatting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/textutility/stringformatter/StringFormatting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CoreIdentify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CoreIdentify.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +32,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Core" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Core" type="f1a62948:ProjectNode" />
-                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -107,7 +91,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "development",
+    "git-widget-placeholder": "Reverting in development",
     "jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": "21",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Administrator/IdeaProjects/Core",
@@ -304,7 +288,8 @@
     <MESSAGE value="Renamed Main class to 'Core'" />
     <MESSAGE value="fixed duplicated command" />
     <MESSAGE value="fixed issue with getInstance() command" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed issue with getInstance() command" />
+    <MESSAGE value="Revert &quot;Added glitchy files to git because I'm retarded&quot;&#10;&#10;This reverts commit ecc6b235" />
+    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Added glitchy files to git because I'm retarded&quot;&#10;&#10;This reverts commit ecc6b235" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
