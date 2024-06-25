@@ -4,11 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a44968d-f162-4396-9d39-87510a507868" name="Changes" comment="Revert &quot;Added glitchy files to git because I'm retarded&quot;&#10;&#10;This reverts commit ecc6b235">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Main.java" afterDir="false" />
+    <list default="true" id="9a44968d-f162-4396-9d39-87510a507868" name="Changes" comment="fixed imports">
+      <changelist_data name="Hinterhaeltiger" email="ole@conrady.info" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/config/PluginAssets.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/config/PluginConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/settings.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/paper-plugin.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CommandRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CommandRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CoreIdentify.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CoreIdentify.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/CoreBootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/CoreBootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CoreIdentifyCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CoreIdentifyCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/logger/Logger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/PacketEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/PacketEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/packets/PacketNMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/packets/PacketNMS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/packets/SetBlockDestroyStagePacketNMS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/nms/packets/SetBlockDestroyStagePacketNMS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +67,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Hinterhaeltiger &lt;ole@conrady.info&gt;" />
+      </list>
+    </option>
     <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -82,36 +106,47 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build + Server.executor": "Run",
-    "Gradle.Build Core.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Kotlin script (Beta).build.gradle.kts.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Reverting in development",
-    "jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": "21",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Administrator/IdeaProjects/Core",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Build + Server.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Build Core.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Proxy.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Server.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin script (Beta).build.gradle.kts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;development&quot;,
+    &quot;jdk.selected.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: &quot;21&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/run/media/oc/sda1/Coding_Projects/VelocityCore&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   },
-  "keyToStringList": {
-    "jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk": [
-      "21=C:/Program Files/Java/jdk-21"
+  &quot;keyToStringList&quot;: {
+    &quot;jdk.preference.com.intellij.ui.dsl.builder.impl.RowImpl.sdk&quot;: [
+      &quot;21=C:/Program Files/Java/jdk-21&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/config" />
+      <recent name="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/config" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\IdeaProjects\Core\src\main\java\dev\cnbetty\core\textutility" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Compound.Run Proxy and Server">
+    <configuration name="Run Proxy and Server" type="CompoundRunConfigurationType">
+      <toRun name="Proxy" type="GradleRunConfiguration" />
+      <toRun name="Server" type="GradleRunConfiguration" />
+      <method v="2" />
+    </configuration>
     <configuration name="Build + Server" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -134,6 +169,56 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="Proxy" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/../VelocityCore" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runVelocity" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Server" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runServer" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Compound.Run Proxy and Server" />
+      <item itemvalue="Gradle.Server" />
+      <item itemvalue="Gradle.Build + Server" />
+      <item itemvalue="Gradle.Proxy" />
+    </list>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -264,7 +349,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716817529103</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Fixed cock-ups by git (or maybe myself)">
+      <option name="closed" value="true" />
+      <created>1719254372436</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1719254372436</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fixed imports">
+      <option name="closed" value="true" />
+      <created>1719254697283</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1719254697283</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -284,12 +385,14 @@
     <MESSAGE value="Updated Minecraft Server version and fixed an issue in the NMS handler where type type Craftplayer was cast to Player, even though that was unnessesary and didn't work" />
     <MESSAGE value="fixed imports broken by previous commit" />
     <MESSAGE value="fixed SetBlockDestroyStageCommand and added a tab executor" />
-    <MESSAGE value="fixed imports" />
     <MESSAGE value="Renamed Main class to 'Core'" />
     <MESSAGE value="fixed duplicated command" />
     <MESSAGE value="fixed issue with getInstance() command" />
     <MESSAGE value="Revert &quot;Added glitchy files to git because I'm retarded&quot;&#10;&#10;This reverts commit ecc6b235" />
-    <option name="LAST_COMMIT_MESSAGE" value="Revert &quot;Added glitchy files to git because I'm retarded&quot;&#10;&#10;This reverts commit ecc6b235" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/development' into development" />
+    <MESSAGE value="Fixed cock-ups by git (or maybe myself)" />
+    <MESSAGE value="fixed imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed imports" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

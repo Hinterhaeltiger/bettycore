@@ -19,6 +19,7 @@ dependencies {
     testImplementation("org.junit.jupiter:junit-jupiter")
     compileOnly("io.papermc.paper:paper-api:1.20.6-R0.1-SNAPSHOT")
     java.toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+    implementation("org.tomlj:tomlj:1.1.1")
 }
 
 java {
@@ -30,6 +31,10 @@ tasks {
         useJUnitPlatform()
     }
     runServer {
+        downloadPlugins{
+            url("https://cdn.modrinth.com/data/evkiwA7V/versions/2aIoW39P/AxiomPaper-1.5.11.jar")
+            url("https://ci.lucko.me/job/spark/418/artifact/spark-bukkit/build/libs/spark-1.10.73-bukkit.jar")
+        }
         minecraftVersion("1.20.6")
     }
     assemble {

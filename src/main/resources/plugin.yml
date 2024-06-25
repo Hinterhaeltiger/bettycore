@@ -1,6 +1,6 @@
 name: Core
 version: 0.0.1-DEV
-main: dev.cnbetty.core.Main
+main: dev.cnbetty.core.Core
 description: Core plugin for CNBetty
 author: Hinterhältiger, Fledi007
 website: cnbetty.dev
