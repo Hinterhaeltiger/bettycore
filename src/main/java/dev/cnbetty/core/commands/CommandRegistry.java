@@ -8,13 +8,22 @@ import org.jetbrains.annotations.NotNull;
 
 public class CommandRegistry {
     public static void registerImportant(BootstrapContext context) {
-        @NotNull LifecycleEventManager<BootstrapContext> manager = context.getLifecycleManager();
+        @NotNull final LifecycleEventManager<BootstrapContext> manager = context.getLifecycleManager();
 
         //plugin.getCommand("opengui").setExecutor(new GUICommand());
+
         manager.registerEventHandler(LifecycleEvents.COMMANDS, event -> {
             final Commands commands = event.registrar();
-            commands.register("coreidentify", "Command for identifying the Core plugin's version", new CoreIdentifyCommand());
+
+
         });
+        //ArgumentType type = ArgumentTypes.resource(RegistryKey.)
+
+        //For MobEffect, you have to use
+
+
+
+
         /*manager.registerEventHandler(LifecycleEvents.COMMANDS, event -> {
             final Commands commands = event.registrar();
             commands.register("setblockdestroystage", "Command for setting a block's destroy stage using an NMS packet", new SetBlockDestroyStageCommand());
@@ -34,8 +43,11 @@ public class CommandRegistry {
         plugin.getCommand("msg").setTabCompleter(new WhisperCommand());*/
 
 
-
-
-
     }
+    //registering legacy (Bukkit) commands
+    /*public static void registerLegacy(final JavaPlugin plugin) {
+        CommandMap cmap = plugin.getServer().getCommandMap();
+
+        cmap.register("fallback", );
+    }*/
 }

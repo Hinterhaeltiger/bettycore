@@ -2,5 +2,5 @@ name: Core
 version: '0.0.1-DEV'
 main: dev.cnbetty.core.Core
 description: Paper Test Plugin
-api-version: '1.20'
+api-version: '1.21'
 bootstrapper: dev.cnbetty.core.CoreBootstrap

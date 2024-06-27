@@ -1,6 +1,7 @@
 package dev.cnbetty.core.config;
 
 import dev.cnbetty.core.Core;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;

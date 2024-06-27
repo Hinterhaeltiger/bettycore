@@ -17,8 +17,7 @@ dependencies {
     paperweight.paperDevBundle("1.20.6-R0.1-SNAPSHOT")
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
-    compileOnly("io.papermc.paper:paper-api:1.20.6-R0.1-SNAPSHOT")
-    java.toolchain.languageVersion.set(JavaLanguageVersion.of(21))
+    compileOnly("io.papermc.paper:paper-api:1.21-R0.1-SNAPSHOT")
     implementation("org.tomlj:tomlj:1.1.1")
 }
 
@@ -35,7 +34,7 @@ tasks {
             url("https://cdn.modrinth.com/data/evkiwA7V/versions/2aIoW39P/AxiomPaper-1.5.11.jar")
             url("https://ci.lucko.me/job/spark/418/artifact/spark-bukkit/build/libs/spark-1.10.73-bukkit.jar")
         }
-        minecraftVersion("1.20.6")
+        minecraftVersion("1.21")
     }
     assemble {
         dependsOn(reobfJar)
