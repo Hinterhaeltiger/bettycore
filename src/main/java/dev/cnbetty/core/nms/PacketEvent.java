@@ -5,7 +5,6 @@ import dev.cnbetty.core.nms.packets.PacketNMS;
 import io.netty.channel.*;
 import org.bukkit.Bukkit;
 import org.bukkit.craftbukkit.entity.CraftPlayer;
-import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
@@ -16,19 +15,19 @@ import java.util.Map;
 
 public class PacketEvent implements Listener {
 
-    private Map<Player, ChannelDuplexHandler> playerHandlers = new HashMap<>();
+     final private Map<CraftPlayer, ChannelDuplexHandler> playerHandlers = new HashMap<>();
 
     @EventHandler
     public void playerJoin(PlayerJoinEvent event) {
-        injectPlayer(event.getPlayer());
+        injectPlayer((CraftPlayer) event.getPlayer());
     }
 
     @EventHandler
     public void playerLeave(PlayerQuitEvent event) {
-        removePlayer(event.getPlayer());
+        removePlayer((CraftPlayer) event.getPlayer());
     }
 
-    private void injectPlayer(Player player) {
+    private void injectPlayer(CraftPlayer player) {
         if (playerHandlers.containsKey(player)) {
             return;
         }
@@ -77,14 +76,14 @@ public class PacketEvent implements Listener {
                 });
             }
         };
-        ChannelPipeline pipeline = ((CraftPlayer) player).getHandle().connection.connection.channel.pipeline();
+        ChannelPipeline pipeline = player.getHandle().connection.connection.channel.pipeline();
         pipeline.addBefore("packet_handler", player.getName(), channelDuplexHandler);
 
         playerHandlers.put(player, channelDuplexHandler);
     }
 
-    private void removePlayer(Player player) {
-        Channel channel = ((CraftPlayer) player).getHandle().connection.connection.channel;
+    private void removePlayer(CraftPlayer player) {
+        Channel channel = (player).getHandle().connection.connection.channel;
         channel.eventLoop().submit(() -> {
             try {
                 if (!channel.isActive() || !channel.isOpen()) {
