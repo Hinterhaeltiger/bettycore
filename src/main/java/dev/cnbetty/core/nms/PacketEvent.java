@@ -15,7 +15,7 @@ import java.util.Map;
 
 public class PacketEvent implements Listener {
 
-     final private Map<CraftPlayer, ChannelDuplexHandler> playerHandlers = new HashMap<>();
+    final private Map<CraftPlayer, ChannelDuplexHandler> playerHandlers = new HashMap<>();
 
     @EventHandler
     public void playerJoin(PlayerJoinEvent event) {

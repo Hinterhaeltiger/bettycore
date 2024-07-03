@@ -1,6 +1,7 @@
 package dev.cnbetty.core.textutility.progressbar;
 
 import dev.cnbetty.core.textutility.stringformatter.StringColor;
+
 public class ProgressBar {
     //TODO: Move to Component-based formatting
     public static String createProgressBar(int x, int max, int length, String begin, String end, String colorbase, String color) {

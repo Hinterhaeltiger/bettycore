@@ -1,6 +1,6 @@
 plugins {
     id("java")
-    id("xyz.jpenilla.run-paper") version "2.2.2"
+    id("xyz.jpenilla.run-paper") version "2.3.0"
     id("io.papermc.paperweight.userdev") version "1.7.1"
 }
 
@@ -30,7 +30,7 @@ tasks {
         useJUnitPlatform()
     }
     runServer {
-        downloadPlugins{
+        downloadPlugins {
             url("https://cdn.modrinth.com/data/evkiwA7V/versions/e4UvdAEk/AxiomPaper-1.5.12.jar")
             url("https://ci.lucko.me/job/spark/418/artifact/spark-bukkit/build/libs/spark-1.10.73-bukkit.jar")
             url("https://cdn.modrinth.com/data/1u6JkXh5/versions/DBLNBwrB/worldedit-bukkit-7.3.4-beta-01.jar")
