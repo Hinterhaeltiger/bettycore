@@ -31,7 +31,7 @@ tasks {
     }
     runServer {
         downloadPlugins {
-            url("https://cdn.modrinth.com/data/evkiwA7V/versions/e4UvdAEk/AxiomPaper-1.5.12.jar")
+            //url("https://cdn.modrinth.com/data/evkiwA7V/versions/e4UvdAEk/AxiomPaper-1.5.12.jar")
             url("https://ci.lucko.me/job/spark/418/artifact/spark-bukkit/build/libs/spark-1.10.73-bukkit.jar")
             url("https://cdn.modrinth.com/data/1u6JkXh5/versions/DBLNBwrB/worldedit-bukkit-7.3.4-beta-01.jar")
         }
