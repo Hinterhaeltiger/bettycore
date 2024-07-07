@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a44968d-f162-4396-9d39-87510a507868" name="Changes" comment="Switched to brigadier commands">
-      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CommandRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/commands/CommandRegistry.java" afterDir="false" />
+    <list default="true" id="9a44968d-f162-4396-9d39-87510a507868" name="Changes" comment="removed axiom plugin reference in runServer gradle Task">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/cutscenes/trigger/CutsceneTrigger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/cutscenes/trigger/ExampleCutscene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/cutscenes/trigger/LocationCutsceneTrigger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/cutscenes/trigger/TriggerContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/cutscenes/util/Camera.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/cutscenes/util/CameraMovement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +46,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Record" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -387,7 +395,23 @@
       <option name="project" value="LOCAL" />
       <updated>1720036376974</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Switched to brigadier commands">
+      <option name="closed" value="true" />
+      <created>1720039255420</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1720039255420</updated>
+    </task>
+    <task id="LOCAL-00024" summary="removed axiom plugin reference in runServer gradle Task">
+      <option name="closed" value="true" />
+      <created>1720121710277</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1720121710277</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -420,7 +444,8 @@
     <MESSAGE value="removed PluginAssets.java as there's a Bukkit API for resources" />
     <MESSAGE value="changed type Player to CraftPlayer in methods using NMS as using Player broke with 1.21" />
     <MESSAGE value="Switched to brigadier commands" />
-    <option name="LAST_COMMIT_MESSAGE" value="Switched to brigadier commands" />
+    <MESSAGE value="removed axiom plugin reference in runServer gradle Task" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed axiom plugin reference in runServer gradle Task" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

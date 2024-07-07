@@ -1,6 +1,6 @@
-package dev.cnbetty.core.textutility.progressbar;
+package dev.cnbetty.core.utility.progressbar;
 
-import dev.cnbetty.core.textutility.stringformatter.StringColor;
+import dev.cnbetty.core.utility.stringformatter.StringColor;
 
 public class ProgressBar {
     //TODO: Move to Component-based formatting

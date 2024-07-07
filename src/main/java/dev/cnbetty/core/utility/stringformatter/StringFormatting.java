@@ -1,4 +1,4 @@
-package dev.cnbetty.core.textutility.stringformatter;
+package dev.cnbetty.core.utility.stringformatter;
 
 @Deprecated()
 public class StringFormatting {
