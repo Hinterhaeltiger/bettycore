@@ -19,8 +19,8 @@ public class MessageSentListener implements Listener, ChatRenderer {
     @Override
     public @NotNull Component render(@NotNull Player source, @NotNull Component sourceDisplayName, @NotNull Component message, @NotNull Audience viewer) {
         return sourceDisplayName.color(TextColor.color(0x636363))
-                .append(Component.text(": \"", TextColor.color(0x636363)))
+                .append(Component.text(": \"", TextColor.color(0xffffff)))
                 .append(message).color(TextColor.color(0x00face))
-                .append(Component.text("\"", TextColor.color(0x636363)));
+                .append(Component.text("\"", TextColor.color(0xffffff)));
     }
 }

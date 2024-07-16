@@ -9,5 +9,6 @@ public class EventRegistry {
     public static void registerAll(Core plugin) {
         Bukkit.getPluginManager().registerEvents(new MessageSentListener(), plugin);
         Bukkit.getPluginManager().registerEvents(new PacketEvent(), plugin);
+        Bukkit.getPluginManager().registerEvents(new PlayerJoinEvent(), plugin);
     }
 }

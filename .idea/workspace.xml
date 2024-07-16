@@ -4,14 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a44968d-f162-4396-9d39-87510a507868" name="Changes" comment="removed axiom plugin reference in runServer gradle Task">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/cutscenes/trigger/CutsceneTrigger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/cutscenes/trigger/ExampleCutscene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/cutscenes/trigger/LocationCutsceneTrigger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/cutscenes/trigger/TriggerContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/cutscenes/util/Camera.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/cutscenes/util/CameraMovement.java" afterDir="false" />
+    <list default="true" id="9a44968d-f162-4396-9d39-87510a507868" name="Changes" comment="init commit for cutscene API">
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/customitems/CustomItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/customitems/CustomItemModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/customitems/StackableItemCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/events/PlayerJoinEvent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Core.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/Core.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/chat/MessageSentListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/chat/MessageSentListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/cutscenes/util/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/cutscenes/util/Camera.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/events/EventRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/events/EventRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/utility/vector/Vector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dev/cnbetty/core/utility/vector/Vector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +52,7 @@
       <list>
         <option value="Record" />
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -130,6 +135,9 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\IdeaProjects\Core\src\main\java\dev\cnbetty\core\textutility" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dev.cnbetty.core.utility.vector" />
+    </key>
   </component>
   <component name="RunManager" selected="Compound.Run Proxy and Server">
     <configuration name="Run Proxy and Server" type="CompoundRunConfigurationType">
@@ -183,6 +191,11 @@
     </configuration>
     <configuration name="Server" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="im.evan.freedomchat.bypassprotocolcheck" value="true" />
+          </map>
+        </option>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
@@ -411,7 +424,15 @@
       <option name="project" value="LOCAL" />
       <updated>1720121710277</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="init commit for cutscene API">
+      <option name="closed" value="true" />
+      <created>1720383178495</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1720383178495</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -445,7 +466,8 @@
     <MESSAGE value="changed type Player to CraftPlayer in methods using NMS as using Player broke with 1.21" />
     <MESSAGE value="Switched to brigadier commands" />
     <MESSAGE value="removed axiom plugin reference in runServer gradle Task" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed axiom plugin reference in runServer gradle Task" />
+    <MESSAGE value="init commit for cutscene API" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit for cutscene API" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
