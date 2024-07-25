@@ -3,13 +3,11 @@ package dev.cnbetty.core.utility.vector;
 import java.util.Arrays;
 
 public class Vector {
-    private float[] components;
+    private final float[] components;
 
     public Vector(final float... components) {
         this.components = new float[components.length];
-        for (int i = 0; i < components.length; i++) {
-            this.components[i] = components[i];
-        }
+        System.arraycopy(components, 0, this.components, 0, components.length);
     }
 
     public static float[] toArray(Vector vector) {
@@ -75,7 +73,7 @@ public class Vector {
         for (float component : getComponents()) {
             sum += component * component;
         }
-        return (float) Math.sqrt((double) sum);
+        return (float) Math.sqrt(sum);
     }
 
     public Vector normalize() {

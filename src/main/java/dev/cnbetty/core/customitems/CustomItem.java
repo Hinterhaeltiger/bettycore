@@ -2,15 +2,13 @@ package dev.cnbetty.core.customitems;
 
 import dev.cnbetty.core.Core;
 import net.kyori.adventure.text.Component;
-import net.kyori.adventure.text.serializer.json.JSONComponentSerializer;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
-import org.yaml.snakeyaml.Yaml;
 
 import java.util.List;
-import java.util.Map;
 
 
 public class CustomItem {
@@ -19,29 +17,45 @@ public class CustomItem {
     private List<Component> lore;
     private Material base;
     private int stackcount;
-    private CustomItemModel itemmodel;
+    private Integer itemmodel;
 
-    public CustomItem(String plainname, Component name, List<Component> lore, Material base, int stackcount, CustomItemModel itemmodel) {
+    public CustomItem(String plainname, Component name, List<Component> lore, Material base, Integer itemmodel, int stackcount) {
         this.plainname = plainname;
         this.name = name;
         this.lore = lore;
         this.base = base;
-        this.stackcount = stackcount;
         this.itemmodel = itemmodel;
+        if (stackcount > 99) {
+            this.stackcount = 99;
+            Core.logger.warning("Maximum allowed stack size is 99!");
+        } else this.stackcount = stackcount;
+
+        CustomItemRegistry.register(this);
+    }
+    //TODO: move from constructor-based initialization to a builder pattern
+
+    public void give(Player recipient, int amount) {
+        if (amount > this.stackcount) {
+            Core.logger.warning(amount + " is too high; Items of type " + this.plainname + " may only have a size of " + this.stackcount);
+            return;
+        }
+        ItemStack itemStack = new ItemStack(this.base);
+        ItemMeta itemMeta = itemStack.getItemMeta();
+        itemMeta.displayName(this.name);
+        itemMeta.lore(lore);
+        itemMeta.setMaxStackSize(this.stackcount);
+        itemMeta.addItemFlags(ItemFlag.HIDE_ADDITIONAL_TOOLTIP);
+        itemStack.setAmount(amount);
+        itemStack.setItemMeta(itemMeta);
+        recipient.getInventory().addItem(itemStack);
+        Core.logger.info("Gave " + amount + " of " + this.plainname + " to player " + recipient.getName());
     }
 
-    public static CustomItem fromYAML(String yamlstring) {
-        Yaml yaml = new Yaml();
-        Map<String, Object> obj = yaml.load(yamlstring);
-        Core.logger.info(obj.toString());
-        return null;
-    }
-
-    public CustomItemModel getItemmodel() {
+    public Integer getItemmodel() {
         return itemmodel;
     }
 
-    public void setItemmodel(CustomItemModel itemmodel) {
+    public void setItemmodel(Integer itemmodel) {
         this.itemmodel = itemmodel;
     }
 
@@ -85,27 +99,4 @@ public class CustomItem {
         this.stackcount = stackcount;
     }
 
-    public String toYAML() {
-        String returncomponents = "";
-        for (int i = 0; i < this.lore.size(); i++) {
-            returncomponents += " -" + JSONComponentSerializer.json().serialize(lore.get(i)) + "";
-        }
-
-        return plainname + ": " +
-                "name: " + JSONComponentSerializer.json().serialize(name) + " " +
-                "lore:" + returncomponents + " " +
-                "base: " + base.getKey() + " " +
-                "stackcount: " + stackcount;
-
-    }
-
-    public void give(Player recipient, int amount) {
-        ItemStack itemStack = new ItemStack(this.base);
-        ItemMeta itemMeta = itemStack.getItemMeta();
-        itemMeta.displayName(this.name);
-        itemMeta.lore(lore);
-        itemStack.setAmount(amount);
-        itemStack.setItemMeta(itemMeta);
-        recipient.getInventory().addItem(itemStack);
-    }
 }

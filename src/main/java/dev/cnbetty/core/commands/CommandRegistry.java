@@ -24,6 +24,20 @@ public class CommandRegistry {
                                                 return Command.SINGLE_SUCCESS;
                                             })).build()
             );
+            /*commands.register(
+                    Commands.literal("giftitem")
+                            .then(
+                                    Commands.argument("recipient", ArgumentTypes.players())
+                                            .then(
+                                                    Commands.argument()
+                                                            .executes(commandContext -> {
+                                                                final TypedKey<String>
+
+                                                                GiftItemCommand.execute(commandContext.getSource(), commandContext.getArgument("recipient", Player.class), commandContext.getArgument("customitem", CustomItem.class));
+                                                                return Command.SINGLE_SUCCESS;
+                                                            })
+                                            )
+                            ).build());*/
         });
     }
 }

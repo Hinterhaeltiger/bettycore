@@ -47,6 +47,7 @@ public class Core extends JavaPlugin {
         version = pluginMeta.getVersion();
         instance = this;
 
+        //CustomItemRegistry.testRegistry();
 
         logger.info("toml message: " + PluginConfig.getKey());
     }

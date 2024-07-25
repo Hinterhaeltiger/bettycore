@@ -24,7 +24,6 @@ public class ProgressBar {
 
     public static String createProgressBar(int x, int max, int length, String color) {
         return createProgressBar(x, max, length, StringColor.WHITE, color);
-
     }
 
     public static String createProgressBar(int x, int max, int length, String begin, String end, String color) {

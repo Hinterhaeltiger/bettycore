@@ -12,5 +12,7 @@ public class CoreBootstrap implements PluginBootstrap {
         //The bootstrap logic is run before anything else, so datapacks can use custom commands
         CommandRegistry.registerImportant(context);
         context.getLogger().info("Commands loaded!");
+
+        //CustomItemRegistry.register(context);
     }
 }
