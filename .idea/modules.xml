@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Core.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Core.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bettycore.Core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/bettycore.Core.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/bettycore.Core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/bettycore.Core.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/dev.cnbetty.core.Core.main.iml" filepath="$PROJECT_DIR$/.idea/modules/dev.cnbetty.core.Core.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/dev.cnbetty.core.Core.test.iml" filepath="$PROJECT_DIR$/.idea/modules/dev.cnbetty.core.Core.test.iml" />
     </modules>

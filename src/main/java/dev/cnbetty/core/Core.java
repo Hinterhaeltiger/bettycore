@@ -1,7 +1,7 @@
 package dev.cnbetty.core;
 
 import dev.cnbetty.core.config.PluginConfig;
-import dev.cnbetty.core.events.EventRegistry;
+import dev.cnbetty.core.listeners.EventRegistry;
 import io.papermc.paper.plugin.configuration.PluginMeta;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;

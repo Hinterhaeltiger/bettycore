@@ -1,4 +1,4 @@
-package dev.cnbetty.core.events;
+package dev.cnbetty.core.listeners;
 
 import dev.cnbetty.core.customitems.CustomItem;
 import net.kyori.adventure.text.Component;
@@ -10,7 +10,7 @@ import org.bukkit.event.Listener;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlayerJoinEvent implements Listener {
+public class PlayerJoinListener implements Listener {
     @EventHandler
     public void onPlayerJoin(org.bukkit.event.player.PlayerJoinEvent evt) {
 
@@ -19,8 +19,8 @@ public class PlayerJoinEvent implements Listener {
         lore.add(Component.text("world").color(TextColor.color(0, 255, 255)));
         CustomItem testitem = null;
 
-        testitem = new CustomItem("testitem", Component.text("test item"), lore, Material.ACACIA_BOAT, 1, 99);
+        testitem = new CustomItem("testitem", Component.text("Test Item"), lore, Material.ACACIA_BOAT, 1, 64);
 
-        testitem.give(evt.getPlayer(), 23);
+        testitem.give(evt.getPlayer(), 100);
     }
 }

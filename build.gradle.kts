@@ -35,10 +35,10 @@ tasks {
             url("https://cdn.modrinth.com/data/1u6JkXh5/versions/DBLNBwrB/worldedit-bukkit-7.3.4-beta-01.jar")
             url("https://cdn.modrinth.com/data/MubyTbnA/versions/vbGiEu4k/FreedomChat-Paper-1.6.0.jar")
         }
-        minecraftVersion("1.21")
+        minecraftVersion("1.21.1")
     }
     runDevBundleServer {
-        minecraftVersion("1.21")
+        minecraftVersion("1.21.1")
     }
     assemble {
         dependsOn(reobfJar)
